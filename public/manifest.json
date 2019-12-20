@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Ultra OTP",
 	"version": "1.0.0",
-	"description": "This is a companion to the Ultra OTP web app (https://ultraotp.com). Use this extension to quickly and securely access your one-time passwords in your browser.",
+	"description": "This is a companion to the Ultra OTP web app. Use this extension to quickly and securely access otps in your browser.",
 	"author": "Thomas Girgenti",
 	"icons": {
 		"48": "logo48.png",
