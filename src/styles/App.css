@@ -307,7 +307,6 @@ small {
 	font-size: .9rem;
 }
 
-
 .tokenCode h2 {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 2.5rem;
@@ -319,10 +318,9 @@ small {
 }
 
 .lineContainer {
-	height: 20px;
-	margin-top: -10px;
+	height: 2px;
+	padding-bottom: 6px;
 }
-
 
 .EditIconWrapper {
 	width: 80px;
@@ -391,6 +389,7 @@ small {
 	box-shadow: rgba(0, 0, 0, 0.11) 0px 14px 20px 0px;
 	color: #3220f2;
 	display: flex;
+	font-size: 1rem;
 	font-weight: 800;
 	height: 40px;
 	justify-content: center;
@@ -429,15 +428,23 @@ small {
 }
 
 
-@media(max-width: 400px) {
-	.tIssuer {
-		font-size: 1.2rem;
+@media (max-width: 700px) {
+	.tokenList {
+		margin-left: -2%;
+		width: 98vw;
 	}
-	.tLabel {
-		font-size: .8rem;
+	.Token {
+		width: calc(96% - 24px);
 	}
-	.tokenCode h2 {
-		font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+	.homeLinksWrapper {
+		flex-direction: column;
+	}
+	.btnFlex {
+		margin-right: 0;
+		margin-bottom: 10px;
 	}
 }
 
@@ -457,25 +464,22 @@ small {
 	}
 }
 
-@media (max-width: 500px) {
-	.homeLinksWrapper {
-		flex-direction: column;
+@media(max-width: 400px) {
+	.tIssuer {
+		font-size: 1.2rem;
 	}
-	.btnFlex {
-		margin-right: 0;
-		margin-bottom: 10px;
+	.tLabel {
+		font-size: .8rem;
+	}
+	.tokenCode h2 {
+		font-size: 2rem;
 	}
 }
 
-@media (max-width: 700px) {
-	.tokenList {
-		margin-left: -2%;
-		width: 98vw;
+@media(max-width: 358px) {
+	.tokenCode h2 {
+		font-size: 1.8rem;
 	}
-	.Token {
-		width: calc(96% - 24px);
-	}
-
 }
 
 @media(prefers-color-scheme: dark) {

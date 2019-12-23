@@ -1,12 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {Redirect} from 'react-router-dom';
-import {isMobile} from "react-device-detect";
-import { SwipeableList, SwipeableListItem } from '@sandstreamdev/react-swipeable-list';
 import EditIcon from './EditIcon';
 import LineContainer from './LineContainer';
 import decrypt from '../../crypto/decrypt';
 import genOtp from '../../helpers/gen-otp';
-import '../../swipeable.css';
 
 
 function TokenTile(props) {
@@ -87,13 +84,11 @@ function Token(props) {
 
 
 	const copy = (code) => {
-		navigator.vibrate(3);
 		navigator.clipboard.writeText(code).then(() => props.complete());
 	};
 
 
 	const handleSwipe = () => {
-		navigator.vibrate([5, 60, 5]);
 		setTimeout(() => {
 			setId(t._id)
 		}, 120);
@@ -103,30 +98,13 @@ function Token(props) {
 	if (id) {
 		return (<Redirect push to={`/edit/${id}`}/>);
 	} else if (secret && issuer && name) {
-
-		if (isMobile) {
-			return (
-					<SwipeableList swipeStartThreshold={10} threshold={0.3}>
-						<SwipeableListItem
-							swipeLeft={{
-								content: <EditIcon click={null} index={props.index} />,
-								action: () => handleSwipe()
-							}}
-						>
-							<TokenTile copy={copy} issuer={issuer} name={name} period={t.period} code={code} timeRemaining={timeRemaining}/>
-						</SwipeableListItem>
-					</SwipeableList>
-			);
-		} else {
 			return (
 				<div className='desktopTokenWrapper'>
-					<TokenTile copy={copy} issuer={issuer} name={name} period={t.period} code={code} timeRemaining={timeRemaining} index={props.index}/>
+					<TokenTile copy={copy} issuer={issuer} name={name} period={t.period} code={code} timeRemaining={timeRemaining} index={props.index} />
 					<EditIcon click={() => setId(t._id)} index={props.index} />
 				</div>
 			)
-		}
-
-	} else {
+		} else {
 		return <div></div>
 	}
 }

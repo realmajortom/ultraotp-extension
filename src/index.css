@@ -13,13 +13,37 @@ html, body {
 	}
 }
 
+@font-face {
+	font-family: "Roboto Mono";
+	font-weight: 500;
+	font-display: block;
+	font-style: normal;
+	src: url('styles/fonts/RobotoMono-Medium.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Manrope';
+	font-weight: 200;
+	font-display: block;
+	font-style: normal;
+	src: url('styles/fonts/Manrope-ExtraLight.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Manrope';
+	font-weight: 300;
+	font-display: block;
+	font-style: normal;
+	src: url('styles/fonts/Manrope-Light.woff2') format('woff2');
+}
+
 
 @font-face {
 	font-family: 'Manrope';
 	font-weight: 400;
 	font-display: block;
 	font-style: normal;
-	src: url('./fonts/Manrope-Regular.woff2') format('woff2');
+	src: url('styles/fonts/Manrope-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -27,7 +51,7 @@ html, body {
 	font-weight: 500;
 	font-display: block;
 	font-style: normal;
-	src: url('./fonts/Manrope-Medium.woff2') format('woff2');
+	src: url('styles/fonts/Manrope-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -35,7 +59,7 @@ html, body {
 	font-weight: 600;
 	font-display: block;
 	font-style: normal;
-	src: url('./fonts/Manrope-SemiBold.woff2') format('woff2');
+	src: url('styles/fonts/Manrope-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -43,7 +67,7 @@ html, body {
 	font-weight: 700;
 	font-display: block;
 	font-style: normal;
-	src: url('./fonts/Manrope-Bold.woff2') format('woff2');
+	src: url('styles/fonts/Manrope-Bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -51,5 +75,5 @@ html, body {
 	font-weight: 800;
 	font-display: block;
 	font-style: normal;
-	src: url('./fonts/Manrope-ExtraBold.woff2') format('woff2');
+	src: url('styles/fonts/Manrope-ExtraBold.woff2') format('woff2');
 }
