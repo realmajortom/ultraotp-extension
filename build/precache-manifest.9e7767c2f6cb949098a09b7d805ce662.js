@@ -1,34 +1,34 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
-  {
-		'revision': '0e31b4c07a8d799035de30d5aab80f4a',
+	{
+		'revision': '8346afcec2c6272601412083163e36bd',
 		'url': '/index.html'
 	},
 	{
-		'revision': '30c68f99b5882bd579bb',
+		'revision': '63d515f1368de487408f',
 		'url': '/static/css/main.c94810b6.chunk.css'
 	},
-  {
-    "revision": "8310206ba164788640b0",
-    "url": "/static/js/2.59cbf46f.chunk.js"
-  },
-  {
-    "revision": "321d5d46da54922ec27f7f78856d2a39",
-    "url": "/static/js/2.59cbf46f.chunk.js.LICENSE"
-  },
 	{
-		'revision': '30c68f99b5882bd579bb',
-		'url': '/static/js/main.4e0b1202.chunk.js'
+		'revision': '8310206ba164788640b0',
+		'url': '/static/js/2.59cbf46f.chunk.js'
 	},
-  {
-    "revision": "a232a10c865a9eb4a435",
-    "url": "/static/js/runtime-main.72af4ec0.js"
-  },
-  {
-    "revision": "40a53849a29e060686619a19237066d5",
-    "url": "/static/media/Manrope-Bold.40a53849.woff2"
-  },
-  {
-    "revision": "8f960c59075a2ee98f96df94aaf1f2a5",
+	{
+		'revision': '321d5d46da54922ec27f7f78856d2a39',
+		'url': '/static/js/2.59cbf46f.chunk.js.LICENSE'
+	},
+	{
+		'revision': '63d515f1368de487408f',
+		'url': '/static/js/main.33e4a2c6.chunk.js'
+	},
+	{
+		'revision': 'a232a10c865a9eb4a435',
+		'url': '/static/js/runtime-main.72af4ec0.js'
+	},
+	{
+		'revision': '40a53849a29e060686619a19237066d5',
+		'url': '/static/media/Manrope-Bold.40a53849.woff2'
+	},
+	{
+		'revision': '8f960c59075a2ee98f96df94aaf1f2a5',
     "url": "/static/media/Manrope-ExtraBold.8f960c59.woff2"
   },
   {
