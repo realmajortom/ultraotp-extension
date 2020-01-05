@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Redirect} from 'react-router-dom';
 import axios from 'axios';
 
@@ -95,7 +95,7 @@ function List() {
 
 				<ul className='tokenList'>
 					{tokens.map((t, i) =>
-						<li key={t._id}><Token token={t} seconds={seconds} complete={() => setToastVis(true)} index={i}/></li>)}
+						<li key={t.id}><Token token={t} seconds={seconds} complete={() => setToastVis(true)} index={i}/></li>)}
 				</ul>
 
 				<EntryBtn/>

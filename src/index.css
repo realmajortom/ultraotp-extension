@@ -1,24 +1,16 @@
 html, body {
-	margin: 0;
-	padding: 0;
-	background-color: #f6f6f6;
-	width: 360px;
+	background-color: #ffffff;
 	height: 600px;
+	margin: 0;
 	overflow-y: scroll;
+	padding: 0;
+	width: 360px;
 }
 
 @media(prefers-color-scheme: dark) {
 	html, body {
 		background-color: #121212;
 	}
-}
-
-@font-face {
-	font-family: "Roboto Mono";
-	font-weight: 500;
-	font-display: block;
-	font-style: normal;
-	src: url('styles/fonts/RobotoMono-Medium.ttf') format('ttf');
 }
 
 @font-face {
