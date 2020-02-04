@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react';
 import {Redirect} from 'react-router-dom';
 import axios from 'axios';
 
-import EntryBtn from '../create/EntryBtn';
 import Alert from '../generic/Alert';
 import Toast from '../generic/Toast';
 import Token from './Token';
+
 
 
 function List() {
@@ -98,7 +98,6 @@ function List() {
 						<li key={t.id}><Token token={t} seconds={seconds} complete={() => setToastVis(true)} index={i}/></li>)}
 				</ul>
 
-				<EntryBtn/>
 			</div>
 		);
 

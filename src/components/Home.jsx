@@ -2,6 +2,7 @@ import React from 'react';
 import {Link, Redirect} from 'react-router-dom';
 
 
+
 function Home() {
 	const Jwt = localStorage.getItem('JWT');
 	const cryptoKey = localStorage.getItem('cryptoKey');
@@ -19,13 +20,17 @@ function Home() {
 					</div>
 
 					<nav className='homeLinksWrapper'>
-						<Link to='/register' className='primaryBtn alertBtn cancelBtn btnFlex'>Register</Link>
 						<Link to='/login' className='primaryBtn alertBtn'>Sign In</Link>
 					</nav>
 
 				</div>
 
-				{/*<h2>Multi-device 2FA tool</h2>*/}
+                <div>
+                    <p style={{fontSize: '16px'}}>Thank you for installing the Ultra OTP browser extension! To sign up for an account, please visit <a
+                        href='https://ultraotp.com'
+                        target='_blank'
+                        rel='noopener'>ultraotp.com</a>.</p>
+                </div>
 
 			</div>
 		);

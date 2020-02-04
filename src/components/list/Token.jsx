@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {Redirect} from 'react-router-dom';
-import EditIcon from './EditIcon';
 import LineContainer from './LineContainer';
 import decrypt from '../../crypto/decrypt';
 import genOtp from '../../helpers/gen-otp';
+
 
 
 function TokenTile(props) {
@@ -34,7 +33,6 @@ function getTimeRemaining(epoch, step) {
 function Token(props) {
 	const t = props.token;
 	const seconds = t.type === 'totp' ? props.seconds : null;
-	const [id, setId] = useState(null);
 	const [name, setName] = useState(null);
 	const [code, setCode] = useState(null);
 	const [secret, setSecret] = useState(null);
@@ -79,37 +77,27 @@ function Token(props) {
 				setTimeRemaining(t.period);
 			}
 
-		}
-	}, [timeRemaining, t, secret, code]);
+        }
+    }, [timeRemaining, t, secret, code]);
 
 
-	const copy = (code) => {
-		navigator.clipboard.writeText(code).then(() => props.complete());
-	};
+    const copy = (code) => {
+        navigator.clipboard.writeText(code).then(() => props.complete());
+    };
 
 
-	const handleSwipe = () => {
-		setTimeout(() => {
-			setId(t.id);
-		}, 120);
-	};
-
-
-	if (id) {
-		return (<Redirect push to={`/edit/${id}`}/>);
-	} else if (secret && issuer && name) {
-			return (
-				<div className='desktopTokenWrapper'>
+    if (secret && issuer && name) {
+        return (
+            <div>
 					<TokenTile copy={copy}
-										 issuer={issuer}
-										 name={name}
-										 period={t.period}
-										 code={code}
-										 timeRemaining={timeRemaining}
-										 index={props.index}/>
-					<EditIcon click={() => setId(t.id)} index={props.index}/>
+                               issuer={issuer}
+                               name={name}
+                               period={t.period}
+                               code={code}
+                               timeRemaining={timeRemaining}
+                               index={props.index}/>
 				</div>
-			)
+        );
 		} else {
 		return <div></div>
 	}

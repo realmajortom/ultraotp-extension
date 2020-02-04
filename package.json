@@ -1,16 +1,16 @@
 {
-	"name": "ultraotp-client",
-	"version": "1.1.0",
-	"private": true,
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/tggir1/ultraotp.git"
-	},
-	"author": "Thomas Girgenti <thomas@thomasg.dev> (https://thomasg.dev)",
-	"license": "MIT",
-	"homepage": "https://ultraotp.com",
-	"dependencies": {
-		"@material-ui/core": "^4.8.0",
+  "name": "ultraotp-client",
+  "version": "1.1.5",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tggir1/ultraotp.git"
+  },
+  "author": "Thomas Girgenti <thomas@thomasg.dev> (https://thomasg.dev)",
+  "license": "MIT",
+  "homepage": "https://ultraotp.com",
+  "dependencies": {
+    "@material-ui/core": "^4.8.0",
 		"axios": "^0.19.0",
 		"otpauth": "^5.0.4",
 		"react": "^16.12.0",
